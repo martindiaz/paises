@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "index": "https://martindiaz.github.io/paises/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://martindiaz.github.io/paises/favicon.ico",
+        "https://martindiaz.github.io/paises/index.html",
+        "https://martindiaz.github.io/paises/main.0b480b4e0063ee32d411.js",
+        "https://martindiaz.github.io/paises/polyfills.46532d96d3286697c138.js",
+        "https://martindiaz.github.io/paises/runtime.a5dd35324ddfd942bef1.js",
+        "https://martindiaz.github.io/paises/styles.e358180328689d5da7aa.css"
+      ],
+      "patterns": [
+        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/.*",
+        "https:\\/\\/restcountries\\.eu\\/data\\/.*"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://martindiaz.github.io/paises/assets/css/animate.css",
+        "https://martindiaz.github.io/paises/assets/icons/icon-128x128.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-144x144.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-152x152.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-192x192.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-384x384.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-512x512.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-72x72.png",
+        "https://martindiaz.github.io/paises/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "pais-api",
+      "patterns": [
+        "https:\\/\\/restcountries\\.eu\\/rest\\/v2\\/lang\\/es"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://martindiaz.github.io/paises/assets/css/animate.css": "08a53ceb09841dfdc6975de1c58a51ca1c8f0765",
+    "https://martindiaz.github.io/paises/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://martindiaz.github.io/paises/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://martindiaz.github.io/paises/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://martindiaz.github.io/paises/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://martindiaz.github.io/paises/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://martindiaz.github.io/paises/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://martindiaz.github.io/paises/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://martindiaz.github.io/paises/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://martindiaz.github.io/paises/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://martindiaz.github.io/paises/index.html": "5a1c910d50486f2cdbfa40942636bfd316766044",
+    "https://martindiaz.github.io/paises/main.0b480b4e0063ee32d411.js": "ffb5e2f9876ade8f3c4cb662c615f018b6b9ccac",
+    "https://martindiaz.github.io/paises/polyfills.46532d96d3286697c138.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "https://martindiaz.github.io/paises/runtime.a5dd35324ddfd942bef1.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://martindiaz.github.io/paises/styles.e358180328689d5da7aa.css": "55185c8d1181be996052cfdd4181ea6bf60c7f72"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
